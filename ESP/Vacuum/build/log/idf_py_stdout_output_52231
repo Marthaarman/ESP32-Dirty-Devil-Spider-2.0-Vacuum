@@ -1,0 +1,31 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd "/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/bootloader/esp-idf/esptool_py" && /home/mart/Espressif/esp-tools/python_env/idf5.1_py3.10_env/bin/python /home/mart/Espressif/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/bootloader/bootloader.bin
+Bootloader binary size 0x6730 bytes. 0x8d0 bytes (8%) free.
+[2/9] Building CXX object esp-idf/ESP32_Vacuum/CMakeFiles/__idf_ESP32_Vacuum.dir/src/ESP32_Vacuum.cpp.obj
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp: In member function 'void ESP32_Vacuum::ControlMotorLeft(ESP32_Vacuum_MotorState)':
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp:57:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   57 |             gpio_set_level((gpio_num_t)_mPinMotorLeftReverse, 1);
+      |             ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp:58:9: note: here
+   58 |         case ESP32_Vacuum_MotorState::IDLE:
+      |         ^~~~
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp: In member function 'void ESP32_Vacuum::ControlMotorRight(ESP32_Vacuum_MotorState)':
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp:75:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   75 |             gpio_set_level((gpio_num_t)_mPinMotorRightReverse, 1);
+      |             ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp:76:9: note: here
+   76 |         case ESP32_Vacuum_MotorState::IDLE:
+      |         ^~~~
+[3/9] Building CXX object esp-idf/run_vacuum/CMakeFiles/__idf_run_vacuum.dir/src/run_vacuum.cpp.obj
+[4/9] Linking C static library esp-idf/ESP32_Vacuum/libESP32_Vacuum.a
+[5/9] Linking C static library esp-idf/run_vacuum/librun_vacuum.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable Vacuum.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/Vacuum.bin
+[9/9] cd "/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/esp-idf/esptool_py" && /home/mart/Espressif/esp-tools/python_env/idf5.1_py3.10_env/bin/python /home/mart/Espressif/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/partition_table/partition-table.bin /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/Vacuum.bin
+Vacuum.bin binary size 0x29ec0 bytes. Smallest app partition is 0x100000 bytes. 0xd6140 bytes (84%) free.

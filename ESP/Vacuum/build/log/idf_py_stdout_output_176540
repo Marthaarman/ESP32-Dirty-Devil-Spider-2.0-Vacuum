@@ -1,0 +1,539 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cd "/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/bootloader/esp-idf/esptool_py" && /home/mart/Espressif/esp-tools/python_env/idf5.1_py3.10_env/bin/python /home/mart/Espressif/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/bootloader/bootloader.bin
+Bootloader binary size 0x6730 bytes. 0x8d0 bytes (8%) free.
+[2/11] Building CXX object esp-idf/run_vacuum/CMakeFiles/__idf_run_vacuum.dir/src/run_vacuum.cpp.obj
+FAILED: esp-idf/run_vacuum/CMakeFiles/__idf_run_vacuum.dir/src/run_vacuum.cpp.obj 
+/home/mart/Espressif/esp-tools/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3213-gd29e53dc0c\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/config" -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/run_vacuum/include" -I/home/mart/Espressif/esp-idf/components/newlib/platform_include -I/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include/freertos -I/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include/soc -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/mart/Espressif/esp-idf/components/esp_hw_support/port/esp32/. -I/home/mart/Espressif/esp-idf/components/esp_hw_support/port/esp32/private_include -I/home/mart/Espressif/esp-idf/components/heap/include -I/home/mart/Espressif/esp-idf/components/log/include -I/home/mart/Espressif/esp-idf/components/soc/include -I/home/mart/Espressif/esp-idf/components/soc/esp32 -I/home/mart/Espressif/esp-idf/components/soc/esp32/include -I/home/mart/Espressif/esp-idf/components/hal/esp32/include -I/home/mart/Espressif/esp-idf/components/hal/include -I/home/mart/Espressif/esp-idf/components/hal/platform_port/include -I/home/mart/Espressif/esp-idf/components/esp_rom/include -I/home/mart/Espressif/esp-idf/components/esp_rom/include/esp32 -I/home/mart/Espressif/esp-idf/components/esp_rom/esp32 -I/home/mart/Espressif/esp-idf/components/esp_common/include -I/home/mart/Espressif/esp-idf/components/esp_system/include -I/home/mart/Espressif/esp-idf/components/esp_system/port/soc -I/home/mart/Espressif/esp-idf/components/esp_system/port/include/private -I/home/mart/Espressif/esp-idf/components/xtensa/include -I/home/mart/Espressif/esp-idf/components/xtensa/esp32/include -I/home/mart/Espressif/esp-idf/components/lwip/include -I/home/mart/Espressif/esp-idf/components/lwip/include/apps -I/home/mart/Espressif/esp-idf/components/lwip/include/apps/sntp -I/home/mart/Espressif/esp-idf/components/lwip/lwip/src/include -I/home/mart/Espressif/esp-idf/components/lwip/port/include -I/home/mart/Espressif/esp-idf/components/lwip/port/freertos/include -I/home/mart/Espressif/esp-idf/components/lwip/port/esp32xx/include -I/home/mart/Espressif/esp-idf/components/lwip/port/esp32xx/include/arch -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/include" -I/home/mart/Espressif/esp-idf/components/driver/include -I/home/mart/Espressif/esp-idf/components/driver/deprecated -I/home/mart/Espressif/esp-idf/components/driver/esp32/include -I/home/mart/Espressif/esp-idf/components/esp_pm/include -I/home/mart/Espressif/esp-idf/components/esp_ringbuf/include -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include" -I/home/mart/Espressif/esp-idf/components/esp_wifi/include -I/home/mart/Espressif/esp-idf/components/esp_event/include -I/home/mart/Espressif/esp-idf/components/esp_phy/include -I/home/mart/Espressif/esp-idf/components/esp_phy/esp32/include -I/home/mart/Espressif/esp-idf/components/esp_netif/include -I/home/mart/Espressif/esp-idf/components/nvs_flash/include -I/home/mart/Espressif/esp-idf/components/spi_flash/include -I/home/mart/Espressif/esp-idf/components/esp_partition/include -I/home/mart/Espressif/esp-idf/components/mqtt/esp-mqtt/include -I/home/mart/Espressif/esp-idf/components/tcp_transport/include -I/home/mart/Espressif/esp-idf/components/esp-tls -I/home/mart/Espressif/esp-idf/components/esp-tls/esp-tls-crypto -I/home/mart/Espressif/esp-idf/components/mbedtls/port/include -I/home/mart/Espressif/esp-idf/components/mbedtls/mbedtls/include -I/home/mart/Espressif/esp-idf/components/mbedtls/mbedtls/library -I/home/mart/Espressif/esp-idf/components/mbedtls/esp_crt_bundle/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og "-fmacro-prefix-map=/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum=." -fmacro-prefix-map=/home/mart/Espressif/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++20 -fno-exceptions -fno-rtti -std=gnu++17 -MD -MT esp-idf/run_vacuum/CMakeFiles/__idf_run_vacuum.dir/src/run_vacuum.cpp.obj -MF esp-idf/run_vacuum/CMakeFiles/__idf_run_vacuum.dir/src/run_vacuum.cpp.obj.d -o esp-idf/run_vacuum/CMakeFiles/__idf_run_vacuum.dir/src/run_vacuum.cpp.obj -c '/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/run_vacuum/src/run_vacuum.cpp'
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/run_vacuum/src/run_vacuum.cpp:3:10: fatal error: ESP32_MQTT.h: No such file or directory
+    3 | #include "ESP32_MQTT.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+[3/11] Building CXX object esp-idf/ESP32_Vacuum/CMakeFiles/__idf_ESP32_Vacuum.dir/src/ESP32_Vacuum.cpp.obj
+FAILED: esp-idf/ESP32_Vacuum/CMakeFiles/__idf_ESP32_Vacuum.dir/src/ESP32_Vacuum.cpp.obj 
+/home/mart/Espressif/esp-tools/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3213-gd29e53dc0c\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/config" -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/include" -I/home/mart/Espressif/esp-idf/components/newlib/platform_include -I/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include/freertos -I/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include/soc -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/mart/Espressif/esp-idf/components/esp_hw_support/port/esp32/. -I/home/mart/Espressif/esp-idf/components/esp_hw_support/port/esp32/private_include -I/home/mart/Espressif/esp-idf/components/heap/include -I/home/mart/Espressif/esp-idf/components/log/include -I/home/mart/Espressif/esp-idf/components/soc/include -I/home/mart/Espressif/esp-idf/components/soc/esp32 -I/home/mart/Espressif/esp-idf/components/soc/esp32/include -I/home/mart/Espressif/esp-idf/components/hal/esp32/include -I/home/mart/Espressif/esp-idf/components/hal/include -I/home/mart/Espressif/esp-idf/components/hal/platform_port/include -I/home/mart/Espressif/esp-idf/components/esp_rom/include -I/home/mart/Espressif/esp-idf/components/esp_rom/include/esp32 -I/home/mart/Espressif/esp-idf/components/esp_rom/esp32 -I/home/mart/Espressif/esp-idf/components/esp_common/include -I/home/mart/Espressif/esp-idf/components/esp_system/include -I/home/mart/Espressif/esp-idf/components/esp_system/port/soc -I/home/mart/Espressif/esp-idf/components/esp_system/port/include/private -I/home/mart/Espressif/esp-idf/components/xtensa/include -I/home/mart/Espressif/esp-idf/components/xtensa/esp32/include -I/home/mart/Espressif/esp-idf/components/lwip/include -I/home/mart/Espressif/esp-idf/components/lwip/include/apps -I/home/mart/Espressif/esp-idf/components/lwip/include/apps/sntp -I/home/mart/Espressif/esp-idf/components/lwip/lwip/src/include -I/home/mart/Espressif/esp-idf/components/lwip/port/include -I/home/mart/Espressif/esp-idf/components/lwip/port/freertos/include -I/home/mart/Espressif/esp-idf/components/lwip/port/esp32xx/include -I/home/mart/Espressif/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/mart/Espressif/esp-idf/components/driver/include -I/home/mart/Espressif/esp-idf/components/driver/deprecated -I/home/mart/Espressif/esp-idf/components/driver/esp32/include -I/home/mart/Espressif/esp-idf/components/esp_pm/include -I/home/mart/Espressif/esp-idf/components/esp_ringbuf/include -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include" -I/home/mart/Espressif/esp-idf/components/esp_wifi/include -I/home/mart/Espressif/esp-idf/components/esp_event/include -I/home/mart/Espressif/esp-idf/components/esp_phy/include -I/home/mart/Espressif/esp-idf/components/esp_phy/esp32/include -I/home/mart/Espressif/esp-idf/components/esp_netif/include -I/home/mart/Espressif/esp-idf/components/nvs_flash/include -I/home/mart/Espressif/esp-idf/components/spi_flash/include -I/home/mart/Espressif/esp-idf/components/esp_partition/include -I/home/mart/Espressif/esp-idf/components/mqtt/esp-mqtt/include -I/home/mart/Espressif/esp-idf/components/tcp_transport/include -I/home/mart/Espressif/esp-idf/components/esp-tls -I/home/mart/Espressif/esp-idf/components/esp-tls/esp-tls-crypto -I/home/mart/Espressif/esp-idf/components/mbedtls/port/include -I/home/mart/Espressif/esp-idf/components/mbedtls/mbedtls/include -I/home/mart/Espressif/esp-idf/components/mbedtls/mbedtls/library -I/home/mart/Espressif/esp-idf/components/mbedtls/esp_crt_bundle/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og "-fmacro-prefix-map=/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum=." -fmacro-prefix-map=/home/mart/Espressif/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++20 -fno-exceptions -fno-rtti -std=gnu++17 -MD -MT esp-idf/ESP32_Vacuum/CMakeFiles/__idf_ESP32_Vacuum.dir/src/ESP32_Vacuum.cpp.obj -MF esp-idf/ESP32_Vacuum/CMakeFiles/__idf_ESP32_Vacuum.dir/src/ESP32_Vacuum.cpp.obj.d -o esp-idf/ESP32_Vacuum/CMakeFiles/__idf_ESP32_Vacuum.dir/src/ESP32_Vacuum.cpp.obj -c '/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp'
+In file included from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/include/ESP32_Vacuum.h:10,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_Vacuum/src/ESP32_Vacuum.cpp:1:
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include/ESP32_WiFi.h:23:45: error: 'esp_event_base_t' has not been declared
+   23 |         static void EventHandler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data);
+      |                                             ^~~~~~~~~~~~~~~~
+[4/11] Building CXX object esp-idf/ESP32_WiFi/CMakeFiles/__idf_ESP32_WiFi.dir/src/ESP32_WiFi.cpp.obj
+FAILED: esp-idf/ESP32_WiFi/CMakeFiles/__idf_ESP32_WiFi.dir/src/ESP32_WiFi.cpp.obj 
+/home/mart/Espressif/esp-tools/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3213-gd29e53dc0c\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/config" -I"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include" -I/home/mart/Espressif/esp-idf/components/newlib/platform_include -I/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include/freertos -I/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include/soc -I/home/mart/Espressif/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/mart/Espressif/esp-idf/components/esp_hw_support/port/esp32/. -I/home/mart/Espressif/esp-idf/components/esp_hw_support/port/esp32/private_include -I/home/mart/Espressif/esp-idf/components/heap/include -I/home/mart/Espressif/esp-idf/components/log/include -I/home/mart/Espressif/esp-idf/components/soc/include -I/home/mart/Espressif/esp-idf/components/soc/esp32 -I/home/mart/Espressif/esp-idf/components/soc/esp32/include -I/home/mart/Espressif/esp-idf/components/hal/esp32/include -I/home/mart/Espressif/esp-idf/components/hal/include -I/home/mart/Espressif/esp-idf/components/hal/platform_port/include -I/home/mart/Espressif/esp-idf/components/esp_rom/include -I/home/mart/Espressif/esp-idf/components/esp_rom/include/esp32 -I/home/mart/Espressif/esp-idf/components/esp_rom/esp32 -I/home/mart/Espressif/esp-idf/components/esp_common/include -I/home/mart/Espressif/esp-idf/components/esp_system/include -I/home/mart/Espressif/esp-idf/components/esp_system/port/soc -I/home/mart/Espressif/esp-idf/components/esp_system/port/include/private -I/home/mart/Espressif/esp-idf/components/xtensa/include -I/home/mart/Espressif/esp-idf/components/xtensa/esp32/include -I/home/mart/Espressif/esp-idf/components/lwip/include -I/home/mart/Espressif/esp-idf/components/lwip/include/apps -I/home/mart/Espressif/esp-idf/components/lwip/include/apps/sntp -I/home/mart/Espressif/esp-idf/components/lwip/lwip/src/include -I/home/mart/Espressif/esp-idf/components/lwip/port/include -I/home/mart/Espressif/esp-idf/components/lwip/port/freertos/include -I/home/mart/Espressif/esp-idf/components/lwip/port/esp32xx/include -I/home/mart/Espressif/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/mart/Espressif/esp-idf/components/esp_wifi/include -I/home/mart/Espressif/esp-idf/components/esp_event/include -I/home/mart/Espressif/esp-idf/components/esp_phy/include -I/home/mart/Espressif/esp-idf/components/esp_phy/esp32/include -I/home/mart/Espressif/esp-idf/components/esp_netif/include -I/home/mart/Espressif/esp-idf/components/nvs_flash/include -I/home/mart/Espressif/esp-idf/components/spi_flash/include -I/home/mart/Espressif/esp-idf/components/esp_partition/include -I/home/mart/Espressif/esp-idf/components/mqtt/esp-mqtt/include -I/home/mart/Espressif/esp-idf/components/tcp_transport/include -I/home/mart/Espressif/esp-idf/components/esp-tls -I/home/mart/Espressif/esp-idf/components/esp-tls/esp-tls-crypto -I/home/mart/Espressif/esp-idf/components/mbedtls/port/include -I/home/mart/Espressif/esp-idf/components/mbedtls/mbedtls/include -I/home/mart/Espressif/esp-idf/components/mbedtls/mbedtls/library -I/home/mart/Espressif/esp-idf/components/mbedtls/esp_crt_bundle/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og "-fmacro-prefix-map=/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum=." -fmacro-prefix-map=/home/mart/Espressif/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++20 -fno-exceptions -fno-rtti -std=gnu++17 -MD -MT esp-idf/ESP32_WiFi/CMakeFiles/__idf_ESP32_WiFi.dir/src/ESP32_WiFi.cpp.obj -MF esp-idf/ESP32_WiFi/CMakeFiles/__idf_ESP32_WiFi.dir/src/ESP32_WiFi.cpp.obj.d -o esp-idf/ESP32_WiFi/CMakeFiles/__idf_ESP32_WiFi.dir/src/ESP32_WiFi.cpp.obj -c '/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp'
+In file included from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:39:6: error: #error "include FreeRTOS.h" must appear in source files before "include event_groups.h"
+   39 |     #error "include FreeRTOS.h" must appear in source files before "include event_groups.h"
+      |      ^~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:39:6: error: #error "include FreeRTOS.h must appear in source files before include timers.h"
+   39 |     #error "include FreeRTOS.h must appear in source files before include timers.h"
+      |      ^~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:40:6: error: #error "include FreeRTOS.h must appear in source files before include task.h"
+   40 |     #error "include FreeRTOS.h must appear in source files before include task.h"
+      |      ^~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:43,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:67:6: error: #error "FreeRTOS.h must be included before list.h"
+   67 |     #error "FreeRTOS.h must be included before list.h"
+      |      ^~~~~
+In file included from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:1:
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include/ESP32_WiFi.h:23:45: error: 'esp_event_base_t' has not been declared
+   23 |         static void EventHandler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data);
+      |                                             ^~~~~~~~~~~~~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:43,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:152:25: error: 'TickType_t' does not name a type
+  152 |     configLIST_VOLATILE TickType_t xItemValue;              /*< The value being listed.  In most cases this is used to sort the list in descending order. */
+      |                         ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:164:25: error: 'TickType_t' does not name a type
+  164 |     configLIST_VOLATILE TickType_t xItemValue;
+      |                         ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:176:14: error: 'UBaseType_t' does not name a type
+  176 |     volatile UBaseType_t uxNumberOfItems;
+      |              ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:354:47: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  354 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:365:55: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  365 | void vListInitialiseItem( ListItem_t * const pxItem ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:379:54: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  379 |                   ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:401:57: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  401 |                      ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:416:1: error: 'UBaseType_t' does not name a type
+  416 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:9: error: ISO C++ forbids declaration of 'BaseType_t' with no type [-fpermissive]
+   96 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |         ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:9: error: typedef 'BaseType_t' is initialized (use 'decltype' instead)
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:23: error: 'TaskHookFunction_t' was not declared in this scope
+   96 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |                       ^~~~~~~~~~~~~~~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:126:5: error: 'BaseType_t' does not name a type
+  126 |     BaseType_t xOverflowCount;
+      |     ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:127:5: error: 'TickType_t' does not name a type
+  127 |     TickType_t xTimeOnEntering;
+      |     ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:145:5: error: 'TaskFunction_t' does not name a type
+  145 |     TaskFunction_t pvTaskCode;
+      |     ^~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:147:5: error: 'configSTACK_DEPTH_TYPE' does not name a type
+  147 |     configSTACK_DEPTH_TYPE usStackDepth;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:147:5: note: the macro 'configSTACK_DEPTH_TYPE' had not yet been defined
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:65,
+                 from /home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:12,
+                 from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include/freertos/FreeRTOSConfig.h:135: note: it was later defined here
+  135 | #define configSTACK_DEPTH_TYPE                          uint32_t
+      | 
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:149:5: error: 'UBaseType_t' does not name a type
+  149 |     UBaseType_t uxPriority;
+      |     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:150:5: error: 'StackType_t' does not name a type
+  150 |     StackType_t * puxStackBuffer;
+      |     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:151:30: error: 'portNUM_CONFIGURABLE_REGIONS' was not declared in this scope
+  151 |     MemoryRegion_t xRegions[ portNUM_CONFIGURABLE_REGIONS ];
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:151:30: note: the macro 'portNUM_CONFIGURABLE_REGIONS' had not yet been defined
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:71,
+                 from /home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:12,
+                 from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:91: note: it was later defined here
+   91 |     #define portNUM_CONFIGURABLE_REGIONS    1
+      | 
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:163:5: error: 'UBaseType_t' does not name a type
+  163 |     UBaseType_t xTaskNumber;                         /* A number unique to the task. */
+      |     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:165:5: error: 'UBaseType_t' does not name a type
+  165 |     UBaseType_t uxCurrentPriority;                   /* The priority at which the task was running (may be inherited) when the structure was populated. */
+      |     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:166:5: error: 'UBaseType_t' does not name a type
+  166 |     UBaseType_t uxBasePriority;                      /* The priority to which the task will return if the task's current priority has been inherited to avoid unbounded priority inversion when obtaining a mutex.  Only valid if configUSE_MUTEXES is defined as 1 in FreeRTOSConfig.h. */
+      |     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:168:5: error: 'StackType_t' does not name a type
+  168 |     StackType_t * pxStackBase;                       /* Points to the lowest address of the task's stack area. */
+      |     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:169:5: error: 'configSTACK_DEPTH_TYPE' does not name a type
+  169 |     configSTACK_DEPTH_TYPE usStackHighWaterMark;     /* The minimum amount of stack space that has remained for the task since the task was created.  The closer this value is to zero the closer the task has come to overflowing its stack. */
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:169:5: note: the macro 'configSTACK_DEPTH_TYPE' had not yet been defined
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:65,
+                 from /home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:12,
+                 from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include/freertos/FreeRTOSConfig.h:135: note: it was later defined here
+  135 | #define configSTACK_DEPTH_TYPE                          uint32_t
+      | 
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:952:72: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  952 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                                                        ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:999:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  999 | void vTaskDelete( TaskHandle_t xTaskToDelete ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:24: error: 'TickType_t' does not name a type
+ 1058 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:51: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1058 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1129:1: error: 'BaseType_t' does not name a type
+ 1129 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1176:1: error: 'BaseType_t' does not name a type
+ 1176 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1229:1: error: 'UBaseType_t' does not name a type
+ 1229 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1241:1: error: 'UBaseType_t' does not name a type
+ 1241 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1263:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1263 | eTaskState eTaskGetState( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1327:20: error: 'BaseType_t' has not been declared
+ 1327 |                    BaseType_t xGetFreeStackSpace,
+      |                    ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1328:40: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1328 |                    eTaskState eState ) PRIVILEGED_FUNCTION;
+      |                                        ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1377:24: error: 'UBaseType_t' has not been declared
+ 1377 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1377:52: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1377 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1434:50: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1434 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                                                  ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1489:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1489 | void vTaskResume( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1524:1: error: 'BaseType_t' does not name a type
+ 1524 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1568:34: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1568 | void vTaskStartScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1630:32: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1630 | void vTaskEndScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1689:30: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1689 | void vTaskSuspendAll( void ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1749:1: error: 'BaseType_t' does not name a type
+ 1749 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1770:1: error: 'TickType_t' does not name a type
+ 1770 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1792:1: error: 'TickType_t' does not name a type
+ 1792 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1812:1: error: 'UBaseType_t' does not name a type
+ 1812 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1831:51: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1831 | char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1853:59: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1853 | TaskHandle_t xTaskGetHandle( const char * pcNameToQuery ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                           ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:1: error: 'UBaseType_t' does not name a type
+ 1886 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1919:1: error: 'configSTACK_DEPTH_TYPE' does not name a type
+ 1919 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1919:1: note: the macro 'configSTACK_DEPTH_TYPE' had not yet been defined
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:65,
+                 from /home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:12,
+                 from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/freertos/esp_additions/include/freertos/FreeRTOSConfig.h:135: note: it was later defined here
+  135 | #define configSTACK_DEPTH_TYPE                          uint32_t
+      | 
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1934:53: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1934 | uint8_t * pxTaskGetStackStart( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2136:1: error: 'BaseType_t' does not name a type
+ 2136 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2146:45: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2146 | TaskHandle_t xTaskGetIdleTaskHandle( void ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2245:1: error: 'UBaseType_t' does not name a type
+ 2245 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2302:40: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2302 | void vTaskList( char * pcWriteBuffer ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                        ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2364:51: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2364 | void vTaskGetRunTimeStats( char * pcWriteBuffer ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2400:46: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 2400 | uint32_t ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2515:1: error: 'BaseType_t' does not name a type
+ 2515 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2679:1: error: 'BaseType_t' does not name a type
+ 2679 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2832:1: error: 'BaseType_t' does not name a type
+ 2832 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3007:37: error: 'UBaseType_t' has not been declared
+ 3007 |                                     UBaseType_t uxIndexToNotify,
+      |                                     ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3008:37: error: 'BaseType_t' has not been declared
+ 3008 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3008:78: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3008 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                                                              ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3116:35: error: 'UBaseType_t' was not declared in this scope
+ 3116 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      |                                   ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3117:35: error: 'BaseType_t' was not declared in this scope
+ 3117 |                                   BaseType_t xClearCountOnExit,
+      |                                   ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3118:35: error: 'TickType_t' was not declared in this scope
+ 3118 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3118:59: error: expression list treated as compound expression in initializer [-fpermissive]
+ 3118 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                           ^
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3185:1: error: 'BaseType_t' does not name a type
+ 3185 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3255:41: error: 'UBaseType_t' has not been declared
+ 3255 |                                         UBaseType_t uxIndexToClear,
+      |                                         ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3256:66: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3256 |                                         uint32_t ulBitsToClear ) PRIVILEGED_FUNCTION;
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3280:58: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3280 | void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3369:1: error: 'BaseType_t' does not name a type
+ 3369 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3402:1: error: 'BaseType_t' does not name a type
+ 3402 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3442:47: error: 'BaseType_t' was not declared in this scope
+ 3442 | TaskHandle_t xTaskGetCurrentTaskHandleForCPU( BaseType_t cpuid );
+      |                                               ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3455:44: error: 'UBaseType_t' was not declared in this scope
+ 3455 | TaskHandle_t xTaskGetIdleTaskHandleForCPU( UBaseType_t cpuid );
+      |                                            ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3460:1: error: 'BaseType_t' does not name a type
+ 3460 | BaseType_t xTaskGetAffinity( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3480:1: error: 'BaseType_t' does not name a type
+ 3480 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3528:35: error: 'TickType_t' does not name a type
+ 3528 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3528:61: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3528 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                             ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3530:44: error: 'TickType_t' does not name a type
+ 3530 |                                      const TickType_t xItemValue,
+      |                                            ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3531:44: error: 'TickType_t' does not name a type
+ 3531 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3531:70: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3531 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3545:39: error: 'TickType_t' has not been declared
+ 3545 |                                       TickType_t xTicksToWait,
+      |                                       ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3546:45: error: 'BaseType_t' does not name a type
+ 3546 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3546:76: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3546 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                                                            ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3592:1: error: 'BaseType_t' does not name a type
+ 3592 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3594:47: error: 'TickType_t' does not name a type
+ 3594 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3594:71: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3594 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3604:1: error: 'portDONT_DISCARD' does not name a type
+ 3604 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3604:1: note: the macro 'portDONT_DISCARD' had not yet been defined
+In file included from /home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:12,
+                 from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:875: note: it was later defined here
+  875 |     #define portDONT_DISCARD
+      | 
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:44,
+                 from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3610:1: error: 'TickType_t' does not name a type
+ 3610 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3615:48: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3615 | TaskHandle_t xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+      |                                                ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3621:31: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3621 | void vTaskMissedYield( void ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3627:1: error: 'BaseType_t' does not name a type
+ 3627 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3633:1: error: 'BaseType_t' does not name a type
+ 3633 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3639:1: error: 'BaseType_t' does not name a type
+ 3639 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3650:43: error: 'UBaseType_t' has not been declared
+ 3650 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3650:86: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3650 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                                                                      ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3655:1: error: 'UBaseType_t' does not name a type
+ 3655 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3662:32: error: 'UBaseType_t' does not name a type
+ 3662 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3662:55: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3662 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3672:27: error: 'TickType_t' does not name a type
+ 3672 | void vTaskStepTick( const TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                           ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3672:53: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3672 | void vTaskStepTick( const TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3688:54: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3688 | eSleepModeStatus eTaskConfirmSleepModeStatus( void ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3694:52: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3694 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3700:66: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 3700 | void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+In file included from /home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:43,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:395:56: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  395 | void * pvTimerGetTimerID( const TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                                        ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:417:41: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  417 |                        void * pvNewID ) PRIVILEGED_FUNCTION;
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:454:1: error: 'BaseType_t' does not name a type
+  454 | BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:462:53: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  462 | TaskHandle_t xTimerGetTimerDaemonTaskHandle( void ) PRIVILEGED_FUNCTION;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1206:1: error: 'BaseType_t' does not name a type
+ 1206 | BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1243:1: error: 'BaseType_t' does not name a type
+ 1243 | BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend,
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1257:53: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1257 | const char * pcTimerGetName( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1275:33: error: 'UBaseType_t' does not name a type
+ 1275 |                           const UBaseType_t uxAutoReload ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1275:60: error: expected initializer before 'PRIVILEGED_FUNCTION'
+ 1275 |                           const UBaseType_t uxAutoReload ) PRIVILEGED_FUNCTION;
+      |                                                            ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1289:1: error: 'UBaseType_t' does not name a type
+ 1289 | UBaseType_t uxTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1300:1: error: 'TickType_t' does not name a type
+ 1300 | TickType_t xTimerGetPeriod( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1315:1: error: 'TickType_t' does not name a type
+ 1315 | TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1323:1: error: 'BaseType_t' does not name a type
+ 1323 | BaseType_t xTimerCreateTimerTask( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1324:1: error: 'BaseType_t' does not name a type
+ 1324 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      | ^~~~~~~~~~
+In file included from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:107:9: error: 'TickType_t' does not name a type
+  107 | typedef TickType_t               EventBits_t;
+      |         ^~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:320:1: error: 'EventBits_t' does not name a type
+  320 | EventBits_t xEventGroupWaitBits( EventGroupHandle_t xEventGroup,
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:385:1: error: 'EventBits_t' does not name a type
+  385 | EventBits_t xEventGroupClearBits( EventGroupHandle_t xEventGroup,
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:529:1: error: 'EventBits_t' does not name a type
+  529 | EventBits_t xEventGroupSetBits( EventGroupHandle_t xEventGroup,
+      | ^~~~~~~~~~~
+In file included from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:4:
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:745:1: error: 'EventBits_t' does not name a type
+  745 | EventBits_t xEventGroupSync( EventGroupHandle_t xEventGroup,
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:792:1: error: 'EventBits_t' does not name a type
+  792 | EventBits_t xEventGroupGetBitsFromISR( EventGroupHandle_t xEventGroup ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:808:58: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  808 | void vEventGroupDelete( EventGroupHandle_t xEventGroup ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:814:63: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  814 |                                  const uint32_t ulBitsToSet ) PRIVILEGED_FUNCTION;
+      |                                                               ^~~~~~~~~~~~~~~~~~~
+/home/mart/Espressif/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:816:67: error: expected initializer before 'PRIVILEGED_FUNCTION'
+  816 |                                    const uint32_t ulBitsToClear ) PRIVILEGED_FUNCTION;
+      |                                                                   ^~~~~~~~~~~~~~~~~~~
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:16:6: error: no declaration matches 'void ESP32_WiFi::EventHandler(void*, esp_event_base_t, int32_t, void*)'
+   16 | void ESP32_WiFi::EventHandler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data)
+      |      ^~~~~~~~~~
+In file included from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:1:
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include/ESP32_WiFi.h:23:21: note: candidate is: 'static void ESP32_WiFi::EventHandler(void*, int, int32_t, void*)'
+   23 |         static void EventHandler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data);
+      |                     ^~~~~~~~~~~~
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/include/ESP32_WiFi.h:7:7: note: 'class ESP32_WiFi' defined here
+    7 | class ESP32_WiFi {
+      |       ^~~~~~~~~~
+In file included from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:54,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp: In member function 'void ESP32_WiFi::_RegisterEventHandlers()':
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:89:13: error: invalid conversion from 'void (*)(void*, int, int32_t, void*)' {aka 'void (*)(void*, int, long int, void*)'} to 'esp_event_handler_t' {aka 'void (*)(void*, const char*, long int, void*)'} [-fpermissive]
+   89 |             &EventHandler,
+      |             ^~~~~~~~~~~~~
+      |             |
+      |             void (*)(void*, int, int32_t, void*) {aka void (*)(void*, int, long int, void*)}
+/home/mart/Espressif/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:242:66: note:   initializing argument 3 of 'esp_err_t esp_event_handler_instance_register(esp_event_base_t, int32_t, esp_event_handler_t, void*, void**)'
+  242 |                                              esp_event_handler_t event_handler,
+      |                                              ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:54,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:99:13: error: invalid conversion from 'void (*)(void*, int, int32_t, void*)' {aka 'void (*)(void*, int, long int, void*)'} to 'esp_event_handler_t' {aka 'void (*)(void*, const char*, long int, void*)'} [-fpermissive]
+   99 |             &EventHandler,
+      |             ^~~~~~~~~~~~~
+      |             |
+      |             void (*)(void*, int, int32_t, void*) {aka void (*)(void*, int, long int, void*)}
+/home/mart/Espressif/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from /home/mart/Espressif/esp-idf/components/esp_wifi/include/esp_wifi.h:56,
+                 from /mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/include/ESP32_WiFi/src/ESP32_WiFi.cpp:5:
+/home/mart/Espressif/esp-idf/components/esp_event/include/esp_event.h:242:66: note:   initializing argument 3 of 'esp_err_t esp_event_handler_instance_register(esp_event_base_t, int32_t, esp_event_handler_t, void*, void**)'
+  242 |                                              esp_event_handler_t event_handler,
+      |                                              ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

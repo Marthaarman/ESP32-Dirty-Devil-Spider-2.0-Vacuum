@@ -1,0 +1,67 @@
+[1/5] cd "/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/esp-idf/esptool_py" && /home/mart/Espressif/esp-tools/python_env/idf5.1_py3.10_env/bin/python /home/mart/Espressif/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/partition_table/partition-table.bin /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/Vacuum.bin
+Vacuum.bin binary size 0xb6740 bytes. Smallest app partition is 0x100000 bytes. 0x498c0 bytes (29%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd "/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/bootloader/esp-idf/esptool_py" && /home/mart/Espressif/esp-tools/python_env/idf5.1_py3.10_env/bin/python /home/mart/Espressif/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /mnt/share/Embedded\ projecten/Vacuum/ESP/Vacuum/build/bootloader/bootloader.bin
+Bootloader binary size 0x6730 bytes. 0x8d0 bytes (8%) free.
+[2/3] cd /home/mart/Espressif/esp-idf/components/esptool_py && /home/mart/Espressif/esp-tools/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/mart/Espressif/esp-idf -D "SERIAL_TOOL=/home/mart/Espressif/esp-tools/python_env/idf5.1_py3.10_env/bin/python;;/home/mart/Espressif/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D "WORKING_DIRECTORY=/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build" -P /home/mart/Espressif/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 Vacuum.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port /dev/ttyUSB0
+Connecting...........
+Chip is ESP32-U4WDH (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, Embedded Flash, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:f0:9e:47:ab:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26416 bytes to 16490...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a2... (100 %)
+Wrote 26416 bytes (16490 compressed) at 0x00001000 in 0.7 seconds (effective 285.2 kbit/s)...
+Hash of data verified.
+Compressed 747328 bytes to 473237...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001b019... (6 %)
+Writing at 0x00026272... (10 %)
+Writing at 0x0002b75f... (13 %)
+Writing at 0x000360a5... (17 %)
+Writing at 0x0003b9fe... (20 %)
+Writing at 0x00041422... (24 %)
+Writing at 0x00046d30... (27 %)
+Writing at 0x0004c6cd... (31 %)
+Writing at 0x000523dc... (34 %)
+Writing at 0x00057d6b... (37 %)
+Writing at 0x0005d02b... (41 %)
+Writing at 0x0006260b... (44 %)
+Writing at 0x00067863... (48 %)
+Writing at 0x0006d117... (51 %)
+Writing at 0x000728aa... (55 %)
+Writing at 0x00077fcc... (58 %)
+Writing at 0x0007de23... (62 %)
+Writing at 0x0008329c... (65 %)
+Writing at 0x00088b5f... (68 %)
+Writing at 0x0008e5da... (72 %)
+Writing at 0x00093d17... (75 %)
+Writing at 0x00099871... (79 %)
+Writing at 0x0009fc76... (82 %)
+Writing at 0x000a57ab... (86 %)
+Writing at 0x000ad168... (89 %)
+Writing at 0x000b62ad... (93 %)
+Writing at 0x000bc20e... (96 %)
+Writing at 0x000c195a... (100 %)
+Wrote 747328 bytes (473237 compressed) at 0x00010000 in 11.2 seconds (effective 535.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 471.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

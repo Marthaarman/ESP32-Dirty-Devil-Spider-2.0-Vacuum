@@ -1,0 +1,7 @@
+[0/1] Re-running CMake...
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!
+See also "/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/home/mart/Espressif/esp-tools/tools/cmake/3.24.0/bin/cmake --regenerate-during-build -S"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum" -B"/mnt/share/Embedded projecten/Vacuum/ESP/Vacuum/build"
